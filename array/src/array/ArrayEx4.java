@@ -42,7 +42,7 @@ public class ArrayEx4 {
         }
 
         // 확인
-        System.out.println(Arrays.toString(jumsu2));
+        System.out.println(Arrays.toString(jumsu2)); // [99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99]
 
         sc.close();
     }
