@@ -1,5 +1,8 @@
 package classtest;
 
+// this : 자기자신
+// super : 부모
+
 public class Student {
     // 속성
     private String 학번; // 학번 s12345678
@@ -14,6 +17,8 @@ public class Student {
     // 생성자 목적
     // 인스턴스 초기화 메소드
 
+    // 생성자 ~
+
     // 생성자 오버로딩
 
     public Student() {
@@ -24,20 +29,18 @@ public class Student {
     }
 
     public Student(String 학번, String 이름) {
-        this.학번 = 학번;
+        // this.학번 = 학번;
+        this(학번);
         this.이름 = 이름;
     }
 
     public Student(String 학번, String 이름, String 주소) {
-        this.학번 = 학번;
-        this.이름 = 이름;
+        this(학번, 이름);
         this.주소 = 주소;
     }
 
     public Student(String 학번, String 이름, String 주소, String 핸드폰) {
-        this.학번 = 학번;
-        this.이름 = 이름;
-        this.주소 = 주소;
+        this(학번, 이름, 주소);
         this.핸드폰 = 핸드폰;
     }
 

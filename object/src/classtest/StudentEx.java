@@ -10,12 +10,17 @@ public class StudentEx {
         Student student4 = new Student("s9587745", "이보미", "서울시 종로구");
         Student student5 = new Student("s3002595", "이휘주", "서울시 은평구", "010-1234-56789");
 
+        // 객체 배열 생성
+        Student[] students = { student1, student2, student3, student4, student5 };
+
         // 이름 조회
         // 메소드호출
         // 1) 리턴타입이 있는경우
+        // String 이름 = student3.get이름();
+        // System.out.println("3번 학생의 이름은 " + 이름 + " 입니다.");
+        // System.out.println("4번 학생의 이름은 " + student4.get이름() + " 입니다.");
 
-        String 이름 = student3.get이름();
-        System.out.println("3번 학생의 이름은 " + 이름 + " 입니다.");
-        System.out.println("4번 학생의 이름은 " + student4.get이름() + " 입니다.");
+        System.out.println("3번 학생의 이름은 " + students[2].get이름() + " 입니다. ");
+
     }
 }
